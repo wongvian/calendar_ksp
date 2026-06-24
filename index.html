@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตารางเวรปฏิบัติงานเสาร์-อาทิตย์ ภาคเรียนที่ 1/2569</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            font-size: 24px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+        .table-wrapper {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 15px;
+        }
+        thead {
+            background-color: #2c3e50;
+            color: #ffffff;
+        }
+        th {
+            padding: 15px 10px;
+            text-align: center;
+            font-weight: 600;
+            border: 1px solid #34495e;
+        }
+        td {
+            padding: 12px 10px;
+            border: 1px solid #e0e0e0;
+            text-align: center;
+            vertical-align: middle;
+        }
+        /* สไตล์สำหรับคอลัมน์สัปดาห์ */
+        .week-col {
+            background-color: #e3f2fd;
+            font-weight: 700;
+            color: #1565c0;
+            width: 12%;
+        }
+        /* สไตล์สำหรับคอลัมน์วันที่ */
+        .date-col {
+            text-align: left;
+            padding-left: 20px;
+            font-weight: 600;
+            color: #555;
+            width: 20%;
+        }
+        /* สไตล์สำหรับแถวคู่ */
+        tbody tr:nth-child(4n+3), tbody tr:nth-child(4n+4) {
+            background-color: #f9fbfb;
+        }
+        /* สไตล์สำหรับวันหยุด */
+        .holiday {
+            background-color: #ffebee !important;
+            color: #c62828;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        /* สไตล์สำหรับชื่อผู้ปฏิบัติงาน */
+        .name-col {
+            color: #2c3e50;
+        }
+        .empty-slot {
+            color: #bdc3c7;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 13px;
+            color: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>ตารางเวรปฏิบัติงานเสาร์-อาทิตย์</h1>
+    <p class="subtitle">ภาคเรียนที่ 1/2569</p>
+    
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>สัปดาห์ที่</th>
+                    <th>วัน / เดือน / ปี</th>
+                    <th>ผู้ปฏิบัติงานเวร 1</th>
+                    <th>ผู้ปฏิบัติงานเวร 2</th>
+                    <th>ผู้ปฏิบัติงานเวร 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- สัปดาห์ที่ 1 -->
+                <tr>
+                    <td class="week-col" rowspan="2">สัปดาห์ที่ 1</td>
+                    <td class="date-col">เสาร์ 4 ก.ค. 69</td>
+                    <td class="name-col">นางวาสนา บุตรสีผา (1)</td>
+                    <td class="name-col">นางแสงจันทร์ จักรพิมพ์ (2)</td>
+                    <td class="name-col">นางสาวบุญยรัตน์ พรมทอง (3)</td>
+                </tr>
+                <tr>
+                    <td class="date-col">อาทิตย์ 5 ก.ค. 69</td>
+                    <td class="name-col">นางวันเพ็ญ ศรีมะโรง (4)</td>
+                    <td class="name-col">นางนรินรัตน์ พรมหากุล (5)</td>
+                    <td class="name-col">จ่าสิบตรียอดรัก บัวพรม (6)</td>
+                </tr>
+
+                <!-- สัปดาห์ที่ 2 -->
+                <tr>
+                    <td class="week-col" rowspan="2">สัปดาห์ที่ 2</td>
+                    <td class="date-col">เสาร์ 11 ก.ค. 69</td>
+                    <td class="name-col">นายนววิช ธงษาราษฎร์ (7)</td>
+                    <td class="name-col">นายวงเวียน วงค์กะโซ่ (8)</td>
+                    <td class="name-col">นางสาวสุนิตรา อุประ (9)</td>
+                </tr>
+                <tr>
+                    <td class="date-col">อาทิตย์ 12 ก.ค. 69</td>
+                    <td class="name-col">นางสาวกัลยาณี ภูยิหวา (10)</td>
+                    <td class="name-col">นางสาวบุญยรัตน์ พลวงศ์ษา (11)</td>
+                    <td class="name-col">นายภาณุมาศ บุตรสีผา (12)</td>
+                </tr>
+
+                <!-- สัปดาห์ที่ 3 -->
+                <tr>
+                    <td class="week-col" rowspan="2">สัปดาห์ที่ 3</td>
+                    <td class="date-col">เสาร์ 18 ก.ค. 69</td>
+                    <td class="name-col">นายศิริชัย วงค์กวานกลม (13)</td>
+                    <td class="name-col">นายอนุสิทธิ์ นนตระอุดร (14)</td>
+                    <td class="name-col">นางหฤทัย บุญฉวี (15)</td>
+                </tr>
+                <tr>
+                    <td class="date-col">อาทิตย์ 19 ก.ค. 69</td>
+                    <td class="name-col">นางมยุรา รัตนบุญศิริ (16)</td>
+                    <td class="name-col">นางสมรัก ผ่านสุวรรณ (17)</td>
+                    <td class="name-col">นางสาวกมลชนก อินทรพรหมมา (18)</td>
+                </tr>
+
+                <!-- สัปดาห์ที่ 4 -->
+                <tr>
+                    <td class="week-col" rowspan="2">สัปดาห์ที่ 4</td>
+                    <td class="date-col">เสาร์ 25 ก.ค. 69</td>
+                    <td class="name-col">นางสุมัทนา รัตนกุล (19)</td>
+                    <td class="name-col">นางวาสนา บุตรสีผา (1)</td>
+                    <td class="empty-slot">-</td>
+                </tr>
+                <tr>
+                    <td class="date-col">อาทิตย์ 26 ก.ค. 69</td>
+                    <td class="name-col">นางแสงจันทร์ จักรพิมพ์ (2)</td>
+                    <td class="name-col">นางสาวบุญยรัตน์ พรมทอง (3)</td>
+                    <td class="empty-slot">-</td>
+                </tr>
+
+                <!-- สัปดาห์ที่ 5 (วันหยุด) -->
+                <tr>
+                    <td class="week-col" rowspan="2">สัปดาห์ที่ 5</td>
+                    <td class="date-col">เสาร์ 1 ส.ค. 69</td>
+                    <td colspan="3" class="holiday">หยุด กศ.ป.</td>
+                </tr>
+                <tr>
+                    <td class="date-col">อาทิตย์ 2 ส.ค. 69</td>
+                    <td colspan="3" class="holiday">หยุด กศ.ป.</td>
+                </tr>
+
+                <!-- สัปดาห์ที่ 6 -->
+                <tr>
+                    <td class="week-col" rowspan="2">สัปดาห์ที่ 6</td>
+                    <td class="date-col">เสาร์ 8 ส.ค. 69</td>
+                    <td class="name-col">นางวันเพ็ญ ศรีมะโรง (4)</td>
+                    <td class="name-col">นางนรินรัตน์ พรมหากุล (5)</td>
+                    <td class="empty-slot">-</td>
+                </tr>
+                <tr>
+                    <td class="date-col">อาทิตย์ 9 ส.ค. 69</td>
+                    <td class="name-col">จ่าสิบตรียอดรัก บัวพรม (6)</td>
+                    <td class="name-col">นายนววิช ธงษาราษฎร์ (7)</td>
+                    <td class="empty-slot">-</td>
+                </tr>
+
+                <!-- สัปดาห์ที่ 7 -->
+                <tr>
+                    <td class="week-col" rowspan="2">สัปดาห์ที่ 7</td>
+                    <td class="date-col">เสาร์ 15 ส.ค. 69</td>
+                    <td class="name-col">นายวงเวียน วงค์กะโซ่ (8)</td>
+                    <td class="name-col">นางสาวสุนิตรา อุประ (9)</td>
+                    <td class="empty-slot">-</td>
+                </tr>
+                <tr>
+                    <td class="date-col">อาทิตย์ 16 ส.ค. 69</td>
+                    <td class="name-col">นางสาวกัลยาณี ภูยิหวา (10)</td>
+                    <td class="name-col">นางสาวบุญยรัตน์ พลวงศ์ษา (11)</td>
+                    <td class="empty-slot">-</td>
+                </tr>
+
+                <!-- สัปดาห์ที่ 8 -->
+                <tr>
+                    <td class="week-col" rowspan="2">สัปดาห์ที่ 8</td>
+                    <td class="date-col">เสาร์ 22 ส.ค. 69</td>
+                    <td class="name-col">นายภาณุมาศ บุตรสีผา (12)</td>
+                    <td class="name-col">นายศิริชัย วงค์กวานกลม (13)</td>
+                    <td class="empty-slot">-</td>
+                </tr>
+                <tr>
+                    <td class="date-col">อาทิตย์ 23 ส.ค. 69</td>
+                    <td class="name-col">นายอนุสิทธิ์ นนตระอุดร (14)</td>
+                    <td class="name-col">นางหฤทัย บุญฉวี (15)</td>
+                    <td class="empty-slot">-</td>
+                </tr>
+
+                <!-- สัปดาห์ที่ 9 -->
+                <tr>
+                    <td class="week-col" rowspan="2">สัปดาห์ที่ 9</td>
+                    <td class="date-col">เสาร์ 29 ส.ค. 69</td>
+                    <td class="name-col">นางมยุรา รัตนบุญศิริ (16)</td>
+                    <td class="name-col">นางสมรัก ผ่านสุวรรณ (17)</td>
+                    <td class="empty-slot">-</td>
+                </tr>
+                <tr>
+                    <td class="date-col">อาทิตย์ 30 ส.ค. 69</td>
+                    <td class="name-col">นางสาวกมลชนก อินทรพรหมมา (18)</td>
+                    <td class="name-col">นางสุมัทนา รัตนกุล (19)</td>
+                    <td class="empty-slot">-</td>
+                </tr>
+
+                <!-- สัปดาห์ที่ 10 (วันหยุด) -->
+                <tr>
+                    <td class="week-col" rowspan="2">สัปดาห์ที่ 10</td>
+                    <td class="date-col">เสาร์ 5 ก.ย. 69</td>
+                    <td colspan="3" class="holiday">หยุด กศ.ป.</td>
+                </tr>
+                <tr>
+                    <td class="date-col">อาทิตย์ 6 ก.ย. 69</td>
+                    <td colspan="3" class="holiday">หยุด กศ.ป.</td>
+                </tr>
+
+                <!-- สัปดาห์ที่ 11 -->
+                <tr>
+                    <td class="week-col" rowspan="2">สัปดาห์ที่ 11</td>
+                    <td class="date-col">เสาร์ 12 ก.ย. 69</td>
+                    <td class="name-col">นางวาสนา บุตรสีผา (1)</td>
+                    <td class="name-col">นางแสงจันทร์ จักรพิมพ์ (2)</td>
+                    <td class="empty-slot">-</td>
+                </tr>
+                <tr>
+                    <td class="date-col">อาทิตย์ 13 ก.ย. 69</td>
+                    <td class="name-col">นางสาวบุญยรัตน์ พรมทอง (3)</td>
+                    <td class="name-col">นางวันเพ็ญ ศรีมะโรง (4)</td>
+                    <td class="empty-slot">-</td>
+                </tr>
+
+                <!-- สัปดาห์ที่ 12 -->
+                <tr>
+                    <td class="week-col" rowspan="2">สัปดาห์ที่ 12</td>
+                    <td class="date-col">เสาร์ 19 ก.ย. 69</td>
+                    <td class="name-col">นางนรินรัตน์ พรมหากุล (5)</td>
+                    <td class="name-col">จ่าสิบตรียอดรัก บัวพรม (6)</td>
+                    <td class="empty-slot">-</td>
+                </tr>
+                <tr>
+                    <td class="date-col">อาทิตย์ 20 ก.ย. 69</td>
+                    <td class="name-col">นายนววิช ธงษาราษฎร์ (7)</td>
+                    <td class="name-col">นายวงเวียน วงค์กะโซ่ (8)</td>
+                    <td class="empty-slot">-</td>
+                </tr>
+
+                <!-- สัปดาห์ที่ 13 -->
+                <tr>
+                    <td class="week-col" rowspan="2">สัปดาห์ที่ 13</td>
+                    <td class="date-col">เสาร์ 26 ก.ย. 69</td>
+                    <td class="name-col">นางสาวสุนิตรา อุประ (9)</td>
+                    <td class="name-col">นางสาวกัลยาณี ภูยิหวา (10)</td>
+                    <td class="empty-slot">-</td>
+                </tr>
+                <tr>
+                    <td class="date-col">อาทิตย์ 27 ก.ย. 69</td>
+                    <td class="name-col">นางสาวบุญยรัตน์ พลวงศ์ษา (11)</td>
+                    <td class="name-col">นายภาณุมาศ บุตรสีผา (12)</td>
+                    <td class="empty-slot">-</td>
+                </tr>
+
+                <!-- สัปดาห์ที่ 14 -->
+                <tr>
+                    <td class="week-col" rowspan="2">สัปดาห์ที่ 14</td>
+                    <td class="date-col">เสาร์ 3 ต.ค. 69</td>
+                    <td class="name-col">นายศิริชัย วงค์กวานกลม (13)</td>
+                    <td class="name-col">นายอนุสิทธิ์ นนตระอุดร (14)</td>
+                    <td class="empty-slot">-</td>
+                </tr>
+                <tr>
+                    <td class="date-col">อาทิตย์ 4 ต.ค. 69</td>
+                    <td class="name-col">นางหฤทัย บุญฉวี (15)</td>
+                    <td class="name-col">นางมยุรา รัตนบุญศิริ (16)</td>
+                    <td class="empty-slot">-</td>
+                </tr>
+
+                <!-- สัปดาห์ที่ 15 (วันหยุด) -->
+                <tr>
+                    <td class="week-col" rowspan="2">สัปดาห์ที่ 15</td>
+                    <td class="date-col">เสาร์ 10 ต.ค. 69</td>
+                    <td colspan="3" class="holiday">หยุด กศ.ป.</td>
+                </tr>
+                <tr>
+                    <td class="date-col">อาทิตย์ 11 ต.ค. 69</td>
+                    <td colspan="3" class="holiday">หยุด กศ.ป.</td>
+                </tr>
+
+                <!-- สัปดาห์ที่ 16 -->
+                <tr>
+                    <td class="week-col" rowspan="2">สัปดาห์ที่ 16</td>
+                    <td class="date-col">เสาร์ 17 ต.ค. 69</td>
+                    <td class="name-col">นางสมรัก ผ่านสุวรรณ (17)</td>
+                    <td class="name-col">นางสาวกมลชนก อินทรพรหมมา (18)</td>
+                    <td class="empty-slot">-</td>
+                </tr>
+                <tr>
+                    <td class="date-col">อาทิตย์ 18 ต.ค. 69</td>
+                    <td class="name-col">นางสุมัทนา รัตนกุล (19)</td>
+                    <td class="name-col">นางวาสนา บุตรสีผา (1)</td>
+                    <td class="empty-slot">-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="footer">อัปเดตล่าสุด: 24 มิ.ย. 2569</p>
+</div>
+
+</body>
+</html>
